@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SARYA-Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+.slider-area h2 {
+	text-align: center;
+	font-family: impact;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 50px 0 30px 0;
+	color: rgb(8, 8, 8);
+}
+.wrapper {
+	display: flex;
+	width: 1250px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 30px;
+	padding: 2.5rem;
+	background: rgb(255, 255, 255);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+.item {
+	animation: animate 25s alternate linear infinite;
+}
+.container:hover .item {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1100px, 0, 0);
+	}
+}
+@media (max-width:767px) {
+	.slider-area h2 {
+		font-size: 30px;
+	}
+	.wrapper {
+		width: 95%;
+		border-radius: 0;
+		padding: 0;
+	}
+}
+        #man .container{
+            padding-left: 1%;
+            background-color: rgb(248, 231, 231);
+        }
+        #man h2{
+            padding-top: 0%;
+            padding-bottom: 1%;
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+
+    <nav class="menu-bar">
+        <a href="home.html"><img src="images\logos\logo.jpg" alt="logo" align="left" width="65px" height="65px"> </a>
+    <ul>
+        <li class="active"><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-user-tie"></i> Profile</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li class="hover-me"><a href="\project\login\login.php">Login</a>
+                    </li>
+                    <li class="hover-me"><a href="\project\login\signup.php">Signup</a>
+                    </li>
+                    <li class="hover-me"><a href="\project\login\logout.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#categories"><i class="fa-solid fa-align-justify"></i>Categories</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li class="hover-me"><a href="mens.html"><i class="fa-solid fa-person"></i>Mens</a>
+                    </li>
+                    <li class="hover-me"><a href="womens.html"><i class="fa-solid fa-person-dress"></i>Womens</a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <!-- <li><a href="#about">About Us </a></li> -->
+        <li><a href="my_cart.html"><i class="fa-solid fa-cart-arrow-down"></i>MY Cart </a></li>
+        
+    </ul>
+    <form>
+    <label><i class="fa-solid fa-magnifying-glass"></i></label>
+    <input class="search" type="text" placeholder="Search for products and brands" value="">
+    <button class="search-btn">Search</button>
+    </form>
+    </nav>
+
+    
+    <section id="home">
+      <div class="container">
+          <h1><span>Best Price</span> This Year</h1> <br>
+          <h4>We are providing best quality materials <br> for men and womens. <br><br> <span>50% Discount!!!</span>
+        </h4> <br>
+        <H5>So hot,They'll Blow Your Mind</H5>
+        <h3>UNBELIEVABLE DEALS</h3>
+      </div>
+    </section>
+
+
+    <div class="slider-area">
+		<h2>Our Brands</h2>
+		<div class="wrapper">
+            <div class="item"><img class="image-fluid col-lg-2 col-md-4 col-6" src="images\Brands\brand1.png" alt="brand-logo"></div>
+            <div class="item"><img class="image-fluid col-lg-2 col-md-4 col-6" src="images\Brands\brand2.jpg" alt="brand-logo"></div>
+            <div class="item"><img class="image-fluid col-lg-2 col-md-4 col-6" src="images\Brands\brand3.jpg" alt="brand-logo"></div>
+            <div class="item"><img class="image-fluid col-lg-2 col-md-4 col-6" src="images\Brands\brand4.jpg" alt="brand-logo"></div>
+            <div class="item"><img class="image-fluid col-lg-2 col-md-4 col-6" src="images\Brands\brand5.png" alt="brand-logo"></div>
+        </div>
+    </div>
+
+
+
+    <section id="new">
+        <div class="one">
+            <h2>  NEW <span>ARRIVALS</span></h2>
+          
+                <a href="mens.html"><img src="images\Products\new1.jpg" alt="images"></a>
+                <a href="womens.html"><img src="images\Products\new2.jpg" alt="images"></a>
+                <a href="allproducts.html"><img src="images\Products\new3.jpg" alt="images"></a>
+        </div>
+    </section><hr>
+
+
+
+    <section id="man">
+        <hr>
+        <div class="slider-area">
+            <h2>Popular Picks</h2>
+            <div class="wrapper">
+        <div class="container">
+            <div class="man-row">
+                
+                <div onclick="window.location.href='shirt1.html';" class="man-box item">
+                    <a href="#"><img src="images\Products\mshirts1.PNG"></a>
+                           <span style="background-color: rgb(189,112,12);color: white;">&#9733;4.5</span>
+                           <h5>Levi's <br> <span> Men Black & Gray Shirt </span> <br> Rs. 749 </h5>
+                 </div>
+                 <div onclick="window.location.href='shirt4.html';" class="man-box item">
+                    <a href="#"><img src="images\Products\mshirts4.PNG"></a>
+                           <span style="background-color: rgb(189,112,12);color: white;">&#9733;3.5</span>
+                           <h5>H&M <br> <span> Men slim fit Shirt </span> <br>Rs. 599</h5>
+                 </div>
+                
+                 <div onclick="window.location.href='ftop1.html'" class="womens-box item">
+                    <a href="#"><img src="images\Products\top.1.JPG"></a>
+                    <span style="background-color: rgb(189,112,12);color: white;">&#9733;4.5</span>
+                           <h5>H&M <br> Women Blue Ribbed Top </span> <br> Rs. 799 </h5>
+                 </div>
+                
+                 <div onclick="window.location.href='fjeans2.html'" class="womens-box item">
+                    <a href="#"><img src="images\Products\fjeans.2.JPG"></a>
+                    <span style="background-color: rgb(189,112,12);color: white;">&#9733;4.7</span>
+                           <h5>H&M <br> <span> Black Skinny Fit Jeans </span> <br> Rs. 2299 </h5>
+                 </div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+   
+
+
+
+    <section id="banner">
+        <div class="container">
+            <h3 class="space"> MID SEASON'S SALE</h3>
+            <h1>Autumn Collection<br>Up to 20% OFF</h1>
+             
+        </div>
+    </section>
+
+   <footer>
+       <div class="row">
+        <ul>
+           <div class="footer-one">
+          
+           <li><a href="home.html"><img class="logo" src="images\logos\logo2.jpg" alt="logo2"  width="65px" height="65px"><h4>SARYA</h4> </a>
+               <p>If you would like to experience <br> the best of online shopping for <br> men and women in India, <br> you are at the right place. <br> Sarya is the ultimate destination for fashion.</p>
+            </li> 
+       
+           </div>
+           <div class="footer-two">
+               <h4>Featured </h4>
+                    
+                   <li><a href="mens.html">Mens</a></li>
+                   <li><a href="womens.html">Womens</a></li>
+                   <li><a href="allproducts.html">New Arrivals</a></li>
+            </div>
+            <div class="contact">
+             <h4>Contact Us</h4>
+             <li><a href="#email">Email</a></li>
+             <li><a href="#facebook">Facebook</a></li>
+             <li><a href="#twitter">Twitter</a></li>
+             <li><a href="#instagram">Instagram</a></li>
+            </div>
+            <div class="about-us">
+            <h4>About Us</h4>
+            <p><strong>SARYA</strong> ,India’s no.1 online fashion <br> destination justifies its fashion <br> relevance by bringing something <br> new and chic to the <br> table on the daily.</p>
+            </div>
+        </ul>
+        </div>
+         <div class="payment">
+             <ul>
+            <li class="visa">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i></li>
+           <li><p>SARYA eCommerce &copy; 2022. All Rights Reserved</p></li>
+           <li class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        </div>
+   </footer>
+</body>
+</html>
